@@ -7,25 +7,18 @@ const ingredients = [
   'Condiments',
 ];
 
-const markup = [];
 
-function createMarkup (el) {
-  const item = document.createElement('li');
-  item.textContent = el;
-  // console.log(item.textContent);
-  item.classList.add("item")
-  // console.log(item);
-  markup.push(item);
-  return item;
+function createMarkup(el) {
+  const element = document.createElement('li');
+  element.classList.add("item");
+  element.textContent = el;
+  return element;
 };
 
-ingredients.forEach(createMarkup);
- 
-console.log(markup);
+const markupArr = ingredients.map(createMarkup);
 
-const list = document.querySelector('#ingredients')
-// console.log(list);
-list.append(markup.join(''));
+const list = document.querySelector("#ingredients");
+list.append(...markupArr);
 
 
 

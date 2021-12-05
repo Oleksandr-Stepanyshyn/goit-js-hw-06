@@ -9,10 +9,10 @@ const ingredients = [
 
 
 function createMarkup(el) {
-  const element = document.createElement('li');
-  element.classList.add("item");
-  element.textContent = el;
-  return element;
+  const item = document.createElement('li');
+  item.classList.add("item");
+  item.textContent = el;
+  return item;
 };
 
 const markupArr = ingredients.map(createMarkup);

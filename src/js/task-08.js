@@ -1,6 +1,6 @@
 const formEl = document.querySelector('.login-form');
 
-function handleSubmit(event) {
+function onFormSubmit(event) {
     event.preventDefault();
     const options = {
         email: event.currentTarget.elements.email.value.trim(),
@@ -13,4 +13,4 @@ function handleSubmit(event) {
     formEl.reset();
 }
 
-formEl.addEventListener('submit', handleSubmit);
+formEl.addEventListener('submit', onFormSubmit);

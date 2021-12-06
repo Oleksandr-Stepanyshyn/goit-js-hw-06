@@ -1,6 +1,6 @@
 const inputTextEl = document.querySelector('#validation-input');
 
-function inputBorderStyle (event) {
+function onInputTextBlur (event) {
     // console.log(event.currentTarget.value.length);
     // console.log(Number(inputTextEl.dataset.length));
     inputTextEl.classList.add('invalid');
@@ -10,4 +10,4 @@ function inputBorderStyle (event) {
     inputTextEl.classList.add('invalid');
 };
 
-inputTextEl.addEventListener('blur', inputBorderStyle);
+inputTextEl.addEventListener('blur', onInputTextBlur);

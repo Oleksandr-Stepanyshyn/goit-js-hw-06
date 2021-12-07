@@ -9,7 +9,7 @@ function createBoxes(amount) {
 
   for (let i = 1; i <= amount; i += 1) {
     const item = document.createElement('div');
-    const sizeBox = 30 + 10 * i;
+    const sizeBox = 20 + 10 * i;
     item.style.width = `${sizeBox}px`;
     item.style.height = `${sizeBox}px`;
     item.style.backgroundColor = getRandomHexColor();

@@ -24,6 +24,7 @@ function createBoxes(amount) {
   }
   
   boxesEl.innerHTML = arrItems.join("");
+  // boxesEl.insertAdjacentHTML("beforeend", arrItems.join(""));
 };
 
 let count;

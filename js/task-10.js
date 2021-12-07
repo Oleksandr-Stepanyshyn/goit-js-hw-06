@@ -41,23 +41,3 @@ const boxesEl = document.querySelector('#boxes');
 inputValueEl.addEventListener('blur', onCounterBoxesInput);
 createBtnEl.addEventListener('click', onCreateBtnClick);
 destroyBtnEl.addEventListener('click', destroyBoxes);
-
-
-
-
-// function onCreateBtnClick(event) {
-//   // inputValueEl.addEventListener('input', onCounterBoxesInput);
-
-//   // const amount = 1;
-
-//   function onCounterBoxesInput(event) {
-//     console.log(event.currentTarget);
-//    amount = event.currentTarget.value;
-//   }
-//   console.log(amount);
-//   // inputValueEl.removeEventListener('input', onCounterBoxesInput);
-//   return amount;
-// };
-
-// createBtnEl.addEventListener('click', onCreateBtnClick)
-
